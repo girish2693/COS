@@ -1,0 +1,72 @@
+<html>
+    <head>
+<title>Customer Search</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+body{
+background-color : rgb(32, 128, 0);
+}
+td,th,h1{
+color : white;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: plum;
+  color: white;
+  text-align: center;
+  }
+</style>
+    </head>
+    <body>
+        <h1 class=h1 align=center>Customer Search</h1>
+        <div class="container">
+        <form action="SearchCustomer" method="post">
+            <table align=center cellspacing=10px class="table table-borderless">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"><span></span></td>
+                </tr>
+                <tr>
+                    <td>Customer ID</td>
+                    <td><input type="text" name="customer_id"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="text" name="dob"><span> dd-mm-yyyy</span></td>
+                </tr>
+                
+                <tr>
+                    <td>Account Number</td>
+                    <td><input type="text" name="account_number"></td>
+                </tr>
+                <tr>
+                    <td>Email Id</td>
+                    <td><input type="text" name="email_id"></td>
+                </tr>
+                
+                <tr>
+                    <td>PAN Number</td>
+                    <td><input type="text" name="pan_number"></td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td><input type="text" name="contact_number"></td>
+                </tr>
+                
+                
+                <tr>
+                    <td align=center><input type="submit" value=Search name="submit">
+                    &emsp;<input type="reset" value=Refresh name="refresh">
+                    &emsp;<input type="button" name="back" value="Back" onClick="location.href='Customer_One_System_Main.html'"></td>
+                </tr>
+                </table>
+                </form>
+                </div>
+                <div class="footer">
+  <h2>Welcome to ABC Bank !!!</h2>
+</div>
+    </body>
+</html>

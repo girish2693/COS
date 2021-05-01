@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer One System Login</title>
+<script type="text/javascript" src="Validation_main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style type="text/css">
+body {
+	background-color: mistyrose;
+}
+
+#star {
+	color: red;
+}
+
+table {
+	text-align: left;
+	margin-top: 12%;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: plum;
+	color: white;
+	text-align: center;
+}
+</style>
+</head>
+<body align=center onload="focus_body()">
+
+	
+		<h1 class="h1" align=center>Welcome to Customer One System</h1>
+        <div class="container">
+		<form action="Employee_Servlet" method="post" role="form">
+			<table  cellspacing="10px" class="table table-borderless">
+				<tr>
+					<td><span id=star>*</span>User Name:</td>
+					<td><input type=text name=username> <span id=s_u></span></td>
+				</tr>
+				<tr>
+					<td><font color=red>*</font>Password:</td>
+					<td><input type=password name=password><span id=s_p></span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit" class="btn btn-success"
+							onclick="return validate()">Submit</button> &emsp;
+						<button type="reset" class="btn btn-info">Refresh</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="footer">
+		<h2>Welcome to ABC Bank !!!</h2>
+	</div>
+</body>
+</html>
